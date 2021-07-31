@@ -203,3 +203,6 @@ fabric.properties
 .coverage
 .pytest_cache
 .pypirc
+
+#Alembic
+alembic/versions/
