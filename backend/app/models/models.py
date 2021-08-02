@@ -1,4 +1,4 @@
-from db import db, metadata, sqlalchemy
+from ..db import db, metadata, sqlalchemy
 
 users = sqlalchemy.Table(
     "users",

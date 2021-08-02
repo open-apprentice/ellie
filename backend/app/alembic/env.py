@@ -37,8 +37,8 @@ fileConfig(config.config_file_name)
 
 
 #
-import models
-from db import metadata
+# import models
+from backend.app.db import metadata
 
 target_metadata = metadata
 

@@ -8,8 +8,12 @@ COPY requirements/production.txt backend/requirements/production.txt
 
 WORKDIR /backend/
 
+# TODO: Account for development and production mode
 RUN pip3 install -r requirements/production.txt
 
 COPY . /backend/
 
+ENV PYTHONPATH "${PYTHONPATH}:/app/"
+
 EXPOSE 8000
+
