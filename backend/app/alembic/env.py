@@ -10,7 +10,7 @@ from sqlalchemy import pool
 # DK
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-load_dotenv(os.path.join(BASE_DIR, ".env"))
+load_dotenv(os.path.join(BASE_DIR, "../.env"))
 sys.path.append(BASE_DIR)
 
 #
@@ -38,9 +38,9 @@ fileConfig(config.config_file_name)
 
 #
 # import models
-from backend.app.db import metadata
+# from app.db import metadata
 
-target_metadata = metadata
+# target_metadata = metadata
 
 
 # other values from the config, defined by the needs of env.py,
